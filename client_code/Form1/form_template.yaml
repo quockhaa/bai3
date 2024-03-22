@@ -1,0 +1,30 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+  data_bindings: []
+components:
+- type: TextBox
+  properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: '',
+    border: '', enabled: true, foreground: '', visible: true, text: Textbox, font_size: null,
+    font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+    background: '', bold: true, underline: false}
+  name: text_box_1
+  layout_properties: {grid_position: 'PCFRIF,IFMPAC'}
+  event_bindings: {pressed_enter: txtNumbers}
+- type: Button
+  properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '', visible: true, text: Button, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: ''}
+  name: button_1
+  layout_properties: {grid_position: 'HFRZIY,BXRXOD'}
+  event_bindings: {click: btnSort}
+- type: Label
+  properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+    visible: true, text: Label, font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: true, underline: false,
+    icon: ''}
+  name: label_1
+  layout_properties: {grid_position: 'WCJPHI,HACFDI'}
+  event_bindings: {hide: lblSortedNumbers}
+is_package: true
